@@ -1,0 +1,165 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+// Before import 
+
+$primary: #12260D;
+$secondary: #53AC3A;
+$info: #AC3A96;
+$dark: #1A1A1D;
+$white: white;
+$gray: #F5F5F5;
+
+$gradient: linear-gradient(to right top, #ac3a96, #d4385c, #cb6221, #a08d00, #53ac3a);
+
+
+
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "info":       $info,
+  "dark":       $dark,
+  "danger":     $white,
+  "gray":       $gray
+  
+);
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+footer{
+  margin-top: auto;
+}
+
+
+
+
+.name{
+  display: none;
+}
+
+
+
+@media (min-width: 768px) {
+
+  .barca{
+    width: 241px;
+    height: 229px;
+
+  }
+
+  .madrid{
+
+    width: 170.26px;
+    height: 229px;
+
+  }
+
+
+  
+  .list{
+
+  li{
+    list-style: none;
+    padding: 1rem;
+    a{
+      color: $white;
+      text-decoration: none;
+    }
+  }
+} 
+
+.search{
+  width: 60%;
+}
+
+}
+
+@media (max-width: 767.98px) {
+
+  .barca{
+    width: 120px;
+    height: 120px;
+
+  }
+
+  .madrid{
+
+    width: 89px;
+    height: 120px;
+
+  }
+  
+  .social{
+    display: none;
+  }
+
+  .name{
+    display: block;
+  }
+
+  .section-center{
+    img{
+      display: none;
+    }
+  }
+
+ 
+
+  .section-left{
+    margin-top: 3rem;
+    
+    ul {
+      display: flex;
+      flex-direction: column;
+      
+      li{
+        list-style: none;
+        
+        a{
+          text-decoration: none;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .section-right{
+    margin-top: 3rem;
+    margin-right: 5rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      
+      li{
+        list-style: none;
+        
+        a{
+          text-decoration: none;
+          color: $white;
+        }
+      }
+    }
+
+  }
+
+
+ }
+
+
+ 
+
+
+
+ 
+
+
+
+
+// Import 
+
+@import "bootstrap/scss/bootstrap";
+
+// After Import
